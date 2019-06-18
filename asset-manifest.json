@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/pwapokedex/pwapokedex/static/css/main.aa248422.chunk.css",
-    "main.js": "/pwapokedex/pwapokedex/static/js/main.e0cc1f86.chunk.js",
-    "main.js.map": "/pwapokedex/pwapokedex/static/js/main.e0cc1f86.chunk.js.map",
-    "runtime~main.js": "/pwapokedex/pwapokedex/static/js/runtime~main.b71fcd53.js",
-    "runtime~main.js.map": "/pwapokedex/pwapokedex/static/js/runtime~main.b71fcd53.js.map",
-    "static/css/2.31dafeb2.chunk.css": "/pwapokedex/pwapokedex/static/css/2.31dafeb2.chunk.css",
-    "static/js/2.bf98bc90.chunk.js": "/pwapokedex/pwapokedex/static/js/2.bf98bc90.chunk.js",
-    "static/js/2.bf98bc90.chunk.js.map": "/pwapokedex/pwapokedex/static/js/2.bf98bc90.chunk.js.map",
-    "static/js/3.7560870b.chunk.js": "/pwapokedex/pwapokedex/static/js/3.7560870b.chunk.js",
-    "static/js/3.7560870b.chunk.js.map": "/pwapokedex/pwapokedex/static/js/3.7560870b.chunk.js.map",
-    "index.html": "/pwapokedex/pwapokedex/index.html",
-    "precache-manifest.84e70d21b67da00fcce7cc570c110894.js": "/pwapokedex/pwapokedex/precache-manifest.84e70d21b67da00fcce7cc570c110894.js",
-    "service-worker.js": "/pwapokedex/pwapokedex/service-worker.js",
-    "static/css/2.31dafeb2.chunk.css.map": "/pwapokedex/pwapokedex/static/css/2.31dafeb2.chunk.css.map",
-    "static/css/main.aa248422.chunk.css.map": "/pwapokedex/pwapokedex/static/css/main.aa248422.chunk.css.map",
-    "static/media/App.css": "/pwapokedex/pwapokedex/static/media/SEGA.12a3db8b.woff"
+    "main.css": "/morpheus86/pwapokedex/static/css/main.27392510.chunk.css",
+    "main.js": "/morpheus86/pwapokedex/static/js/main.e2d18112.chunk.js",
+    "main.js.map": "/morpheus86/pwapokedex/static/js/main.e2d18112.chunk.js.map",
+    "runtime~main.js": "/morpheus86/pwapokedex/static/js/runtime~main.18baf9ba.js",
+    "runtime~main.js.map": "/morpheus86/pwapokedex/static/js/runtime~main.18baf9ba.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/morpheus86/pwapokedex/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.bf98bc90.chunk.js": "/morpheus86/pwapokedex/static/js/2.bf98bc90.chunk.js",
+    "static/js/2.bf98bc90.chunk.js.map": "/morpheus86/pwapokedex/static/js/2.bf98bc90.chunk.js.map",
+    "static/js/3.7560870b.chunk.js": "/morpheus86/pwapokedex/static/js/3.7560870b.chunk.js",
+    "static/js/3.7560870b.chunk.js.map": "/morpheus86/pwapokedex/static/js/3.7560870b.chunk.js.map",
+    "index.html": "/morpheus86/pwapokedex/index.html",
+    "precache-manifest.267f5654962e38e9800cf3d08604e8e1.js": "/morpheus86/pwapokedex/precache-manifest.267f5654962e38e9800cf3d08604e8e1.js",
+    "service-worker.js": "/morpheus86/pwapokedex/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/morpheus86/pwapokedex/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.27392510.chunk.css.map": "/morpheus86/pwapokedex/static/css/main.27392510.chunk.css.map",
+    "static/media/App.css": "/morpheus86/pwapokedex/static/media/SEGA.12a3db8b.woff"
   }
 }
