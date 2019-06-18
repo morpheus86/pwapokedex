@@ -1,12 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunkMiddleware from "redux-thunk";
+import { createLogger } from "redux-logger";
+import "tachyons";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Client from "./containers/Client";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { register } from "./serviceWorker";
+import {
+  requestPokemons,
+  searchPokemons,
+  requestPokemon,
+  requestPokemonSpecies
+} from "./reducer";
+
+import "./index.css";
+
+const logger = createLogger();
+
+const rootReducers = combineReducers({
+  requestPokemons,
+  searchPokemons,
+  requestPokemon,
+  requestPokemonSpecies
+});
+
+const store = createStore(
+  rootReducers,
+  applyMiddleware(thunkMiddleware, logger)
+);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Client />
+  </Provider>,
+  document.getElementById("root")
+);
+register();
