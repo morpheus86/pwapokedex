@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/pwapokedex/static/css/main.1249f700.chunk.css",
-    "main.js": "/pwapokedex/static/js/main.41ba1df9.chunk.js",
-    "main.js.map": "/pwapokedex/static/js/main.41ba1df9.chunk.js.map",
-    "runtime~main.js": "/pwapokedex/static/js/runtime~main.a8f97d9f.js",
-    "runtime~main.js.map": "/pwapokedex/static/js/runtime~main.a8f97d9f.js.map",
+    "main.css": "/pwapokedex/static/css/main.54702d3c.chunk.css",
+    "main.js": "/pwapokedex/static/js/main.899a8596.chunk.js",
+    "main.js.map": "/pwapokedex/static/js/main.899a8596.chunk.js.map",
+    "runtime~main.js": "/pwapokedex/static/js/runtime~main.2fd3dbbc.js",
+    "runtime~main.js.map": "/pwapokedex/static/js/runtime~main.2fd3dbbc.js.map",
     "static/css/2.31dafeb2.chunk.css": "/pwapokedex/static/css/2.31dafeb2.chunk.css",
-    "static/js/2.bf98bc90.chunk.js": "/pwapokedex/static/js/2.bf98bc90.chunk.js",
-    "static/js/2.bf98bc90.chunk.js.map": "/pwapokedex/static/js/2.bf98bc90.chunk.js.map",
-    "static/js/3.7560870b.chunk.js": "/pwapokedex/static/js/3.7560870b.chunk.js",
-    "static/js/3.7560870b.chunk.js.map": "/pwapokedex/static/js/3.7560870b.chunk.js.map",
+    "static/js/2.64f6fd81.chunk.js": "/pwapokedex/static/js/2.64f6fd81.chunk.js",
+    "static/js/2.64f6fd81.chunk.js.map": "/pwapokedex/static/js/2.64f6fd81.chunk.js.map",
+    "static/js/3.4f1f3b80.chunk.js": "/pwapokedex/static/js/3.4f1f3b80.chunk.js",
+    "static/js/3.4f1f3b80.chunk.js.map": "/pwapokedex/static/js/3.4f1f3b80.chunk.js.map",
     "index.html": "/pwapokedex/index.html",
-    "precache-manifest.da2a41d6550f4bd0d2286b5bdc13973c.js": "/pwapokedex/precache-manifest.da2a41d6550f4bd0d2286b5bdc13973c.js",
+    "precache-manifest.056a3218b896a2e6475ca943f3473fca.js": "/pwapokedex/precache-manifest.056a3218b896a2e6475ca943f3473fca.js",
     "service-worker.js": "/pwapokedex/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/pwapokedex/static/css/2.31dafeb2.chunk.css.map",
-    "static/css/main.1249f700.chunk.css.map": "/pwapokedex/static/css/main.1249f700.chunk.css.map",
+    "static/css/main.54702d3c.chunk.css.map": "/pwapokedex/static/css/main.54702d3c.chunk.css.map",
     "static/media/App.css": "/pwapokedex/static/media/SEGA.12a3db8b.woff"
   }
 }
