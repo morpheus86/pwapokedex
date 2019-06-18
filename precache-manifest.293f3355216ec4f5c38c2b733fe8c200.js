@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff9d22686f18cdfff2e48910d42fa9ea",
+    "revision": "5bb2ab722fb709ed537edffece91e07a",
     "url": "/morpheus86/pwapokedex/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/morpheus86/pwapokedex/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "e436fb9fc58b638b746f",
+    "revision": "2bba11e33a67b1fc44b5",
     "url": "/morpheus86/pwapokedex/static/css/main.27392510.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/morpheus86/pwapokedex/static/js/3.7560870b.chunk.js"
   },
   {
-    "revision": "e436fb9fc58b638b746f",
-    "url": "/morpheus86/pwapokedex/static/js/main.e2d18112.chunk.js"
+    "revision": "2bba11e33a67b1fc44b5",
+    "url": "/morpheus86/pwapokedex/static/js/main.2216df34.chunk.js"
   },
   {
     "revision": "bc64ffd24cb24c68ee82",

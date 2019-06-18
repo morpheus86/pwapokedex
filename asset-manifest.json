@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/morpheus86/pwapokedex/static/css/main.27392510.chunk.css",
-    "main.js": "/morpheus86/pwapokedex/static/js/main.e2d18112.chunk.js",
-    "main.js.map": "/morpheus86/pwapokedex/static/js/main.e2d18112.chunk.js.map",
+    "main.js": "/morpheus86/pwapokedex/static/js/main.2216df34.chunk.js",
+    "main.js.map": "/morpheus86/pwapokedex/static/js/main.2216df34.chunk.js.map",
     "runtime~main.js": "/morpheus86/pwapokedex/static/js/runtime~main.18baf9ba.js",
     "runtime~main.js.map": "/morpheus86/pwapokedex/static/js/runtime~main.18baf9ba.js.map",
     "static/css/2.31dafeb2.chunk.css": "/morpheus86/pwapokedex/static/css/2.31dafeb2.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.7560870b.chunk.js": "/morpheus86/pwapokedex/static/js/3.7560870b.chunk.js",
     "static/js/3.7560870b.chunk.js.map": "/morpheus86/pwapokedex/static/js/3.7560870b.chunk.js.map",
     "index.html": "/morpheus86/pwapokedex/index.html",
-    "precache-manifest.267f5654962e38e9800cf3d08604e8e1.js": "/morpheus86/pwapokedex/precache-manifest.267f5654962e38e9800cf3d08604e8e1.js",
+    "precache-manifest.293f3355216ec4f5c38c2b733fe8c200.js": "/morpheus86/pwapokedex/precache-manifest.293f3355216ec4f5c38c2b733fe8c200.js",
     "service-worker.js": "/morpheus86/pwapokedex/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/morpheus86/pwapokedex/static/css/2.31dafeb2.chunk.css.map",
     "static/css/main.27392510.chunk.css.map": "/morpheus86/pwapokedex/static/css/main.27392510.chunk.css.map",
