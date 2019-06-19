@@ -6,7 +6,7 @@ import SinglePokemon from "../components/SinglePokemon";
 export default class Client extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
         <div>
           <Switch>
             <Route exact path="/" component={App} />

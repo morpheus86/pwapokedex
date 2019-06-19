@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ name, idx }) => {
+const Card = ({ name, idx, count }) => {
   return (
     <div className="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5">
       <img

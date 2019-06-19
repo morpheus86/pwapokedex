@@ -8,7 +8,7 @@ import "tachyons";
 
 import Client from "./containers/Client";
 
-import { register } from "./serviceWorker";
+import registerServiceWorker from "./serviceWorker";
 import {
   requestPokemons,
   searchPokemons,
@@ -38,4 +38,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-register();
+registerServiceWorker();

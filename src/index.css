@@ -1,13 +1,110 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  ); /* w3c */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.evolution-row .evolution-sprite {
+  flex-grow: 1;
+}
+
+.evolution-row svg {
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+.evolution-row-inner {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+.evolution-row .evolution-sprite {
+  flex-grow: 1;
+}
+
+.evolution-row svg {
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+.evolutions {
+  margin: 0 100px;
+}
+.img {
+  box-shadow: 2px 2px 4px 0 #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 1.5em;
+  padding: 1em;
+  width: 100%;
+}
+.img img {
+  width: 35%;
+  height: 250px;
+}
+
+.evolution-row .evolution-sprite {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.monster-sprite {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.svg {
+  fill: green;
+  stroke: green;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+}
+
+.monster-minutia {
+  display: flex;
+  margin: 0 20px 10px;
+}
+
+.monster-minutia > strong {
+  flex-basis: 20%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.monster-minutia > span {
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0 2px;
+}
+
+@media (max-width: 320px) {
+  .monster-minutia > strong {
+    font-size: 12px;
+  }
+  .monster-minutia > span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .monster-minutia > strong {
+    font-size: 13px;
+  }
+  .monster-minutia > span {
+    font-size: 13px;
+  }
 }
