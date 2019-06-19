@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pwapokedex/static/css/main.54702d3c.chunk.css",
-    "main.js": "/pwapokedex/static/js/main.9bf22e66.chunk.js",
-    "main.js.map": "/pwapokedex/static/js/main.9bf22e66.chunk.js.map",
+    "main.js": "/pwapokedex/static/js/main.4748de10.chunk.js",
+    "main.js.map": "/pwapokedex/static/js/main.4748de10.chunk.js.map",
     "runtime~main.js": "/pwapokedex/static/js/runtime~main.c7cc6533.js",
     "runtime~main.js.map": "/pwapokedex/static/js/runtime~main.c7cc6533.js.map",
     "static/css/2.31dafeb2.chunk.css": "/pwapokedex/static/css/2.31dafeb2.chunk.css",
     "static/js/2.7849c5df.chunk.js": "/pwapokedex/static/js/2.7849c5df.chunk.js",
     "static/js/2.7849c5df.chunk.js.map": "/pwapokedex/static/js/2.7849c5df.chunk.js.map",
     "index.html": "/pwapokedex/index.html",
-    "precache-manifest.bc508518ca96cad6d4c8e4793347e54b.js": "/pwapokedex/precache-manifest.bc508518ca96cad6d4c8e4793347e54b.js",
+    "precache-manifest.edb61d2e94c91db598bf979ad16a2e80.js": "/pwapokedex/precache-manifest.edb61d2e94c91db598bf979ad16a2e80.js",
     "service-worker.js": "/pwapokedex/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/pwapokedex/static/css/2.31dafeb2.chunk.css.map",
     "static/css/main.54702d3c.chunk.css.map": "/pwapokedex/static/css/main.54702d3c.chunk.css.map",
