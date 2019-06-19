@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "226182b5c009b4b8ab95821691dab16c",
+    "revision": "f67c07ba418120e8436faaa1284d5271",
     "url": "/pwapokedex/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwapokedex/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "e7de8459a74400691355",
+    "revision": "91fe035bb43b8404e43e",
     "url": "/pwapokedex/static/css/main.54702d3c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwapokedex/static/js/2.7849c5df.chunk.js"
   },
   {
-    "revision": "e7de8459a74400691355",
-    "url": "/pwapokedex/static/js/main.4748de10.chunk.js"
+    "revision": "91fe035bb43b8404e43e",
+    "url": "/pwapokedex/static/js/main.21d255cc.chunk.js"
   },
   {
     "revision": "e1cb71c978add38bb8af",
