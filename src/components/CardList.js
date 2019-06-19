@@ -16,9 +16,9 @@ const CardList = ({ pokemons }) => {
         : null;
     const name = pokemons && pokemons[itemKey] ? pokemons[itemKey].name : null;
     const id = pokemons && pokemons[itemKey] ? pokemons[itemKey].id : null;
-    // console.log(props);
+
     return (
-      <Link to={`/pokemon/${pokemons[itemKey].name}/${itemKey + 1}`}>
+      <Link to={`/pokemon/${name}/${itemKey + 1}`}>
         <Card id={id} name={name} idx={idx} style={style} />
       </Link>
     );
