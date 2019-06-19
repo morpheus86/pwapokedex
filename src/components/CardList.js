@@ -26,7 +26,7 @@ const CardList = ({ pokemons }) => {
 
   return pokemons.length > 0 ? (
     <Grid
-      className=""
+      className="tc grow br3 pa3 ma2 dib"
       width={1000}
       height={800}
       columnCount={5}
