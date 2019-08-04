@@ -47,7 +47,7 @@ class SinglePokemon extends Component {
             <div className={`col-12 col-md${9}`}>
               <div className="progress">
                 <div
-                  className="progress-bar "
+                  className="progress-bar"
                   style={{
                     width: `${st.base_stat / 1.7}%`,
                     backgroundColor: `#c2185b`

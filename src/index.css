@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   background: linear-gradient(
     to left,
@@ -83,7 +84,15 @@ body {
   margin-right: 3px;
   font-size: 14px;
 }
-
+/* .progress-bar {
+  margin: auto;
+} */
+.row {
+  margin-right: 1.5rem;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+}
 .monster-minutia > span {
   flex-basis: 30%;
   flex-grow: 1;
