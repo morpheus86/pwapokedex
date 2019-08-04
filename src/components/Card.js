@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({ name, idx, count }) => {
+const Card = ({ name, idx }) => {
   return (
-    <div className="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5">
+    <div className="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5 i-ns blue">
       <img
         alt="pokemon-img"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${idx}.png?size=200x200`}

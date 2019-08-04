@@ -34,25 +34,28 @@ class App extends Component {
   render() {
     const { pokemons, searchField, onSearchChange, isPending } = this.props;
     const filteredPokemons =
-      pokemons &&
-      pokemons.filter(poke => {
-        return poke.name.toLowerCase().includes(searchField.toLowerCase());
-      });
+      pokemons && searchField.length > 0
+        ? pokemons.filter(poke => {
+            return poke.name.toLowerCase().includes(searchField.toLowerCase());
+          })
+        : pokemons;
 
     return (
       <div className="tc">
-        <h1 className="f1">PokemonsFriends</h1>
+        <h1 className="f1">Pokemons Friends</h1>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
-          {/* <Suspense fallback={<div>Loading...</div>}> */}
           {isPending ? (
             <h1>Loading</h1>
           ) : (
             <ErrorBoundry>
-              <CardList pokemons={filteredPokemons} isPending={isPending} />
+              <CardList
+                pokemons={filteredPokemons}
+                isPending={isPending}
+                search={searchField}
+              />
             </ErrorBoundry>
           )}
-          {/* </Suspense> */}
         </Scroll>
       </div>
     );
