@@ -4,7 +4,6 @@ import Card from "./Card";
 import { FixedSizeGrid as Grid } from "react-window";
 
 const CardList = ({ pokemons, search }) => {
-  console.log(pokemons);
   const Cell = props => {
     const { columnIndex, rowIndex, style } = props;
     const columnCount = 5;
