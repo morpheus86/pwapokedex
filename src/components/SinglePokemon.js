@@ -20,7 +20,7 @@ class SinglePokemon extends Component {
       name,
       stats,
       types,
-      weight
+      weight,
     } = this.props.pokemon;
 
     const { id, chain } = this.props.chararcter;
@@ -28,19 +28,19 @@ class SinglePokemon extends Component {
 
     const abilityName =
       abilities && abilities
-        ? abilities.map(ab => ab.ability.name).join(", ")
+        ? abilities.map((ab) => ab.ability.name).join(", ")
         : "NA";
     const type =
       types &&
       types
-        .map(t => {
+        .map((t) => {
           return t.type.name;
         })
         .join(", ");
 
     const stat =
       stats &&
-      stats.map(st => {
+      stats.map((st) => {
         return (
           <div className="row align-items-center" key={st.stat.name}>
             <div className={`col-12 col-md-${3}`}>{st.stat.name}:</div>
@@ -50,7 +50,7 @@ class SinglePokemon extends Component {
                   className="progress-bar"
                   style={{
                     width: `${st.base_stat / 1.7}%`,
-                    backgroundColor: `#c2185b`
+                    backgroundColor: `#c2185b`,
                   }}
                   role="progressbar"
                   aria-valuenow="25"
@@ -68,7 +68,7 @@ class SinglePokemon extends Component {
     const ev =
       stats &&
       stats
-        .map(st => {
+        .map((st) => {
           return `${st.effort} ${st.stat.name}`;
         })
         .join(", ");
@@ -85,7 +85,7 @@ class SinglePokemon extends Component {
 
     const egg_group =
       this.props.species.egg_groups && this.props.species.egg_groups
-        ? this.props.species.egg_groups.map(el => el.name).join(", ")
+        ? this.props.species.egg_groups.map((el) => el.name).join(", ")
         : "NA";
 
     const evolve_from =
@@ -109,9 +109,7 @@ class SinglePokemon extends Component {
                 title="Photo of pokemon"
               />
               <h1 className="f3 mb2">
-                <a href="#" className="f5 fw4 gray mt0">
-                  {name}
-                </a>
+                <button className="f5 fw4 gray mt0">{name}</button>
               </h1>
               <div className="monster-minutia">
                 <strong>Type: </strong>
@@ -173,23 +171,20 @@ class SinglePokemon extends Component {
   }
 }
 
-const mapState = state => {
+const mapState = (state) => {
   return {
     pokemon: state.requestPokemon.pokemon,
     chararcter: state.requestPokemon.characteristics,
-    species: state.requestPokemonSpecies.species
+    species: state.requestPokemonSpecies.species,
   };
 };
 
-const mapDispatch = dispatch => {
+const mapDispatch = (dispatch) => {
   return {
-    poke: name => dispatch(fetchByName(name)),
-    char: id => dispatch(getCharacteristics(id)),
-    spec: name => dispatch(getSpecies(name))
+    poke: (name) => dispatch(fetchByName(name)),
+    char: (id) => dispatch(getCharacteristics(id)),
+    spec: (name) => dispatch(getSpecies(name)),
   };
 };
 
-export default connect(
-  mapState,
-  mapDispatch
-)(SinglePokemon);
+export default connect(mapState, mapDispatch)(SinglePokemon);

@@ -20,7 +20,7 @@ export const setSearchField = (text) => ({
 export const requestPokemons = () => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_POKEMONS_PENDING });
-    const url = `https://pokeapi.co/api/v2/pokemon/?limit=1000`;
+    const url = `https://pokeapi.co/api/v2/pokemon/?limit=850`;
     const res = await axios.get(url);
     const poke = res.data;
     dispatch({ type: REQUEST_POKEMONS_SUCCESS, payload: poke.results });

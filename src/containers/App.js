@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+import React, { PureComponent, Suspense, lazy } from "react";
 import { connect } from "react-redux";
 import { setSearchField, requestPokemons } from "../actions";
 
-import CardList from "../components/CardList";
+// import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
+
 import ErrorBoundry from "../components/ErrorBoundry";
 
 import "./App.css";
 
-// const CardList = lazy(() => import("../components/CardList"));
+const CardList = lazy(() => import("../components/CardList"));
 
 const mapStateToProps = (state) => {
   return {
@@ -26,7 +26,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-class App extends Component {
+class App extends PureComponent {
   componentDidMount() {
     this.props.onRequestPokemons();
   }
@@ -41,23 +41,30 @@ class App extends Component {
         : pokemons;
 
     return (
-      <div className="tc">
-        <h1 className="f1">Pokemons Friends</h1>
-        <SearchBox searchChange={onSearchChange} />
-        {/* <Scroll> */}
-        {isPending ? (
-          <h1>Loading</h1>
-        ) : (
-          <ErrorBoundry>
-            <CardList
-              pokemons={filteredPokemons}
-              isPending={isPending}
-              search={searchField}
-            />
-          </ErrorBoundry>
-        )}
-        {/* </Scroll> */}
-      </div>
+      <Suspense
+        fallback={
+          <div>
+            <h1>Loading</h1>
+          </div>
+        }
+      >
+        <div className="tc">
+          <h1 className="f1">Pokemons Friends</h1>
+          <SearchBox searchChange={onSearchChange} />
+
+          {isPending ? (
+            <h1>Loading</h1>
+          ) : (
+            <ErrorBoundry>
+              <CardList
+                pokemons={filteredPokemons}
+                isPending={isPending}
+                search={searchField}
+              />
+            </ErrorBoundry>
+          )}
+        </div>
+      </Suspense>
     );
   }
 }
