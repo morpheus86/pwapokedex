@@ -11,18 +11,18 @@ import "./App.css";
 
 // const CardList = lazy(() => import("../components/CardList"));
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     searchField: state.searchPokemons.searchField,
     pokemons: state.requestPokemons.pokemons,
-    isPending: state.requestPokemons.isPending
+    isPending: state.requestPokemons.isPending,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onSearchChange: event => dispatch(setSearchField(event.target.value)),
-    onRequestPokemons: () => dispatch(requestPokemons())
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    onRequestPokemons: () => dispatch(requestPokemons()),
   };
 };
 
@@ -35,7 +35,7 @@ class App extends Component {
     const { pokemons, searchField, onSearchChange, isPending } = this.props;
     const filteredPokemons =
       pokemons && searchField.length > 0
-        ? pokemons.filter(poke => {
+        ? pokemons.filter((poke) => {
             return poke.name.toLowerCase().includes(searchField.toLowerCase());
           })
         : pokemons;
@@ -44,25 +44,22 @@ class App extends Component {
       <div className="tc">
         <h1 className="f1">Pokemons Friends</h1>
         <SearchBox searchChange={onSearchChange} />
-        <Scroll>
-          {isPending ? (
-            <h1>Loading</h1>
-          ) : (
-            <ErrorBoundry>
-              <CardList
-                pokemons={filteredPokemons}
-                isPending={isPending}
-                search={searchField}
-              />
-            </ErrorBoundry>
-          )}
-        </Scroll>
+        {/* <Scroll> */}
+        {isPending ? (
+          <h1>Loading</h1>
+        ) : (
+          <ErrorBoundry>
+            <CardList
+              pokemons={filteredPokemons}
+              isPending={isPending}
+              search={searchField}
+            />
+          </ErrorBoundry>
+        )}
+        {/* </Scroll> */}
       </div>
     );
   }
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

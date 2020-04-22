@@ -9,18 +9,18 @@ import {
   GETTING_POKEMON_FAILED,
   GET_CHARACTERISTICS,
   GET_SPECIES,
-  GET_SPECIES_ERROR
+  GET_SPECIES_ERROR,
 } from "./constants";
 
-export const setSearchField = text => ({
+export const setSearchField = (text) => ({
   type: CHANGE_SEARCHFIELD,
-  payload: text
+  payload: text,
 });
 
-export const requestPokemons = () => async dispatch => {
+export const requestPokemons = () => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_POKEMONS_PENDING });
-    const url = `https://pokeapi.co/api/v2/pokemon/?limit=850`;
+    const url = `https://pokeapi.co/api/v2/pokemon/?limit=1000`;
     const res = await axios.get(url);
     const poke = res.data;
     dispatch({ type: REQUEST_POKEMONS_SUCCESS, payload: poke.results });
@@ -29,7 +29,7 @@ export const requestPokemons = () => async dispatch => {
   }
 };
 
-export const fetchByName = name => async dispatch => {
+export const fetchByName = (name) => async (dispatch) => {
   try {
     const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
     const res = await axios.get(url);
@@ -40,7 +40,7 @@ export const fetchByName = name => async dispatch => {
   }
 };
 
-export const getCharacteristics = id => async dispatch => {
+export const getCharacteristics = (id) => async (dispatch) => {
   try {
     const url = `https://pokeapi.co/api/v2/evolution-chain/${id}`;
     const poke = await axios.get(url);
@@ -51,7 +51,7 @@ export const getCharacteristics = id => async dispatch => {
   }
 };
 
-export const getSpecies = name => async dispatch => {
+export const getSpecies = (name) => async (dispatch) => {
   try {
     const url = `https://pokeapi.co/api/v2/pokemon-species/${name}`;
     const res = await axios.get(url);

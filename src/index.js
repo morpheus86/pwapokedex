@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunkMiddleware from "redux-thunk";
-import { createLogger } from "redux-logger";
 import "tachyons";
 
 import Client from "./containers/Client";
@@ -13,24 +12,19 @@ import {
   requestPokemons,
   searchPokemons,
   requestPokemon,
-  requestPokemonSpecies
+  requestPokemonSpecies,
 } from "./reducer";
 
 import "./index.css";
-
-const logger = createLogger();
 
 const rootReducers = combineReducers({
   requestPokemons,
   searchPokemons,
   requestPokemon,
-  requestPokemonSpecies
+  requestPokemonSpecies,
 });
 
-const store = createStore(
-  rootReducers,
-  applyMiddleware(thunkMiddleware, logger)
-);
+const store = createStore(rootReducers, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>
