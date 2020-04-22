@@ -1,0 +1,2 @@
+(this.webpackJsonppwapokedex=this.webpackJsonppwapokedex||[]).push([[3],{74:function(e,t,a){"use strict";a.r(t);var n=a(0),s=a.n(n);t.default=function(e){var t=e.name,a=e.idx;return s.a.createElement("div",{className:"tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5 i-ns blue"},s.a.createElement("img",{alt:"pokemon-img",src:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/".concat(a,".png?size=200x200")}),s.a.createElement("div",null,s.a.createElement("h2",null,t)))}}}]);
+//# sourceMappingURL=3.3dac0d3e.chunk.js.map
