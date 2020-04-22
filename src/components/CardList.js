@@ -6,28 +6,6 @@ const Card = React.lazy(() => import("./Card"));
 class CardList extends PureComponent {
   render() {
     const { pokemons } = this.props;
-    // const ItemRenderer = memo((props) => {
-    //   const { columnIndex, data, rowIndex, style } = props;
-    //   const createItemData = memoize((data) => data);
-    //   const datas = createItemData(data);
-    //   const columnCount = 5;
-    //   const itemKey = columnIndex + rowIndex * columnCount;
-
-    //   const idx =
-
-    //     datas && datas[itemKey]
-    //       ? datas[itemKey].url.split("/")[
-    //           datas[itemKey].url.split("/").length - 2
-    //         ]
-    //       : null;
-    //   const name = datas && datas[itemKey] ? datas[itemKey].name : null;
-    //   const id = datas && datas[itemKey] ? datas[itemKey].id : null;
-    //   return (
-    //     <Link to={`/pokemon/${name}/${idx}`}>
-    //       <Card id={id} name={name} idx={idx} style={style} />
-    //     </Link>
-    //   );
-    // });
 
     return (
       <Suspense fallback={<div>Loading...</div>}>

@@ -2,7 +2,6 @@ import React, { PureComponent, Suspense, lazy } from "react";
 import { connect } from "react-redux";
 import { setSearchField, requestPokemons } from "../actions";
 
-// import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 
 import ErrorBoundry from "../components/ErrorBoundry";
