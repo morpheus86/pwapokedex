@@ -14,6 +14,7 @@ class CardList extends PureComponent {
     //   const itemKey = columnIndex + rowIndex * columnCount;
 
     //   const idx =
+
     //     datas && datas[itemKey]
     //       ? datas[itemKey].url.split("/")[
     //           datas[itemKey].url.split("/").length - 2
